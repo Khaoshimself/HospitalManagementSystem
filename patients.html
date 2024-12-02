@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Management</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Patient Management</h1>
+    <nav>
+        <a href="dashboard.html">Back to Dashboard</a>
+    </nav>
+    <h2>Add New Patient</h2>
+    <form id="patientForm">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" required>
+        <br>
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" required>
+        <br>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        <br>
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+        <br>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+        <br>
+        <button type="submit">Add Patient</button>
+    </form>
+    <h2>Patient List</h2>
+    <table id="patientTable" border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>DOB</th>
+                <th>Gender</th>
+                <th>Phone</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+    <script src="js/app.js"></script>
+</body>
+</html>
