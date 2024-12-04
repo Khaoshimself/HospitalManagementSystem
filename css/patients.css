@@ -77,7 +77,7 @@ form label {
 }
 
 form input, form select {
-    width: 100%;
+    width: 95%;
     padding: 12px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
