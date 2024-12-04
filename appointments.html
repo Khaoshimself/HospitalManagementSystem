@@ -13,20 +13,32 @@
     </nav>
     <h2>Schedule Appointment</h2>
     <form id="appointmentForm">
-        <label for="patientId">Patient ID:</label>
-        <input type="number" id="patientId" name="patientId" required>
+        <label for="patient_id">Patient ID:</label>
+        <input type="number" id="patient_id" name="patient_id" required>
         <br>
-        <label for="date">Date:</label>
-        <input type="date" id="date" name="date" required>
+        <label for="appointment_date">Date:</label>
+        <input type="date" id="appointment_date" name="appointment_date" required>
         <br>
-        <label for="time">Time:</label>
-        <input type="time" id="time" name="time" required>
+        <label for="appt_time">Time:</label>
+        <input type="time" id="appt_time" name="appt_time" required>
         <br>
-        <label for="purpose">Purpose:</label>
-        <input type="text" id="purpose" name="purpose" required>
+        <label for="appointment_purpose">Purpose:</label>
+        <input type="text" id="appointment_purpose" name="appointment_purpose" required>
+        <br>
+        <label for="appt_status">Status:</label>
+        <input type="text" id="appt_status" name="appt_status" value="Scheduled" readonly>
+        <br>
+        <label for="appt_cost">Cost:</label>
+        <input type="number" id="appt_cost" name="appt_cost" value="0" required>
+        <br>
+        <label for="doctor_id">Doctor ID:</label>
+        <input type="number" id="doctor_id" name="doctor_id" required>
+        <br>
+        <label for="room_id">Room ID:</label>
+        <input type="number" id="room_id" name="room_id" required>
         <br>
         <button type="submit">Schedule</button>
-    </form>
+    </form>    
     <h2>Upcoming Appointments</h2>
     <table id="appointmentTable" border="1">
         <thead>
@@ -42,6 +54,6 @@
             
         </tbody>
     </table>
-    <script src="js/app.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
